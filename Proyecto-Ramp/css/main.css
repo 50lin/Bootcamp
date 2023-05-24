@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+nav ul a{
+    color: white;
+}
+
+nav ul a:hover{
+    color: rgb(255, 0, 0);
+}
+
+main{
+} 
+
+
+
+
+/*
+@Media
+============= mobil=============
+*/
+@media screen and (max-width: 400px) {
+
+    nav {
+        height: 70px;
+    }
+
+    #menu {
+        list-style: none;
+        margin-top: 5px;
+    }
+
+    nav div img {
+        display: block;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(119, 118, 126);
+        border: 1px solid black;
+        height: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/*============= Final Mobil============*/
+
+
+/*============= Tablet =============*/
+
+@media screen and (min-width: 400px) { 
+
+    nav {
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav div img {
+        height: 70px;
+    }
+
+    #menu {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: right;
+        margin-right: 5%;
+       
+       
+    
+    }
+    
+    li {
+        max-width: 120px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: rgb(119, 118, 126);
+        border: 1px solid black;
+        height: 30px;
+        width: 23%; 
+    }
+
+#logo img{
+margin-left:20%;
+}
+
+
+#banner{
+    
+    background-image: url('../assets/banerGandalf.jpg');
+    background-repeat: no-repeat; 
+    height: 700px;   
+    background-size: cover;
+    width: 100%; 
+    
+    }
+    
+    #banner div{
+    width: 50%; 
+    
+    }
+    
+    #banner div h1{
+        color: white;
+        padding-top: 200px;
+    font-size: 3.5em;
+    font-weight: 300;
+    padding-left: 150px;
+    
+    }
+
+
+}
+
+/*============= Final Tablet ============*/
+
+
+/*============= Desktop =============*/
+
+@media screen and (min-width: 1080px) {
+
+    nav {
+        background-color: rgb(197, 197, 252);
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav div img {
+        height: 80px;
+
+    }
+
+    #menu {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: right;
+        margin-right: 5%;
+       
+    
+    }
+    
+    li {
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: rgb(119, 118, 126);
+        border: 1px solid black;
+        height: 90px 
+    }
+
+    li:hover{
+        background-color: black;
+    }
+
+#logo img{
+margin-left:30%; 
+}
+
+}
+
+/*============= Final Desktop ============*/
