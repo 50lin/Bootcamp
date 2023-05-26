@@ -4,17 +4,24 @@
     box-sizing: border-box;
 }
 
+body{
+    border: 2px solid red;
+    max-width: 460px; 
+    min-width: 460px; 
+    margin: 0 auto;
+}
 /* HEADER */
+
+
 
 nav div img {
     display: block;
-    height: 50px;
+    height: 70px;
     margin: 0 auto;
 }
 
 #menu {
-    margin-top: 5px;
-    width: 80%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -23,59 +30,74 @@ nav div img {
 nav ul a {
     color: rgb(255, 255, 255);
     background-color: rgb(14, 24, 109);
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     height: 25px;
     align-items: center;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 nav ul a:hover {
-    color:  #0b0704;
+    color: #0b0704;
+    background-color: aqua;
 }
- 
+
 li {
-    border-radius: 20px;
-    border: 1px solid black;
     list-style: none;
     text-align: center;
 }
 
 /* CAJA DECORATIVA */
 #cajaDecorativa {
+    background-color: black;
+    width: 300px; 
+    height: 200px;
+    margin: 0 auto; 
+}
+#cajaDecorativa2 { 
+    background-color: rgb(18, 16, 59);
+    height: 200px;
     width: 100%;
-    height: 100px;
-    background-color: #0b0704;
-    position: absolute;
-    top: 80px;
-    z-index: -1;
+    margin: 0 auto;
+    margin-top: -50px;
 }
 
-/* BANNER */
-#banner div {
-    height: 100px;
-    width: 100%;
-    z-index: 1;
-}
+main>div{
+    height: 70px; 
+    min-width: 300px;  
+    margin-top: -65px;
+} 
+
 
 #banner img {
-    width: 100%;  
+    margin-top: 20px;
+    width: 100%;
 }
 
-#banner{
-    position: relative;  
+#banner {
+    max-width: 380px;  
+    margin: 0 auto;
+    background-color: #0b0704;
+    position: relative;
 }
 
 #banner p {
     color: white;
-    width: 35%;
+    width: 40%;
     margin-left: 20px;
     position: absolute;
-    top:20px;
+    top: 55px;
     text-align: center;
+    font-size: 1.3rem;
 }
+
+
+
+
+
 
 
 /*============= Tablet =============*/
