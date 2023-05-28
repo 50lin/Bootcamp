@@ -12,27 +12,103 @@
 
 <body>
 
-<header>
-    <nav>
-        <div id="logo">
-            <img src="../assets/logo-gandalf.png" alt="">
-        </div>
-        
-        <ul id="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="biografia.html">Biografia</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+
+            <div id="logo">
+                <img src="../assets/logo-gandalf.png" alt="Logo Barra de navegacion">
+            </div>
+
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
 
     <main>
+        <div>
+            <div id="cajaDecorativa"></div>
+            <div id="cajaDecorativa2">
+                <div id="titulo">
+                    <h1 id="tituloContacto">Contacto</h1>
+                </div>
+                <div class="datosContacto">
+                    <div> <p>Hola, me llamo "Joker" y soy el responsable de Atención al Cliente ¿Te puedo ayudar en algo?</p>
+                        <p>Tfno. +34 650 19 6665</p>
+                        <p>mail: Lino.hadeed@gmailcom</p>
+                        <p>Cueva debajo de la montaña del dragon (Tierra Media)</p>
+                    </div>
+               
+                </div>
+            </div>
+        </div> 
+
+
+
+        <article id="bannerContacto">  
+            <div id="divBanner">
+            </div>
+            <div id="cajaFormulario">
+                <h1>Contacto</h1> 
+                <div class="datosContactoMobil">
+                    
+                        <p>Hola, me llamo "Joker" y soy el responsable de Atención al Cliente ¿Te puedo ayudar en algo?</p>
+                        <p>Tfno. +34 650 19 6665</p>
+                        <p>mail: Lino.hadeed@gmailcom</p>
+                        <p>Cueva debajo de la montaña del dragon (Tierra Media)</p>
+
+                </div>
+
+                <fieldset>
+                    <legend>Consultas:</legend>
+                <form action="" method="POST" id="formulario" name="formulario" >
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                    <label for="correo">E-mail</label>
+                    <input type="text" name="correo" id="correo" placeholder="E-Mail">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="20" rows="5" placeholder="Escribe tu consulta aqui..."></textarea>
+                    <input type="button" value="Enviar">
+                </form>
+            </fieldset>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93179.40500497099!2d175.50343131951448!3d-39.287777645101045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6b001d8474a167%3A0xf00ef62249d5650!2sParque%20Nacional%20de%20Tongariro!5e1!3m2!1ses-419!2ses!4v1685288301874!5m2!1ses-419!2ses" width="400"  height="300" style="border:0;" allowfullscreen=""  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+        </article>
+
+      
+
 
     </main>
 
-    <footer>
+    <footer id="footerContacto">
 
+        <div id="redes">
+            <img src="../assets/facebook.png" alt="Logo Footer">
+            <img src="../assets/gorjeo.png" alt="Logo Footer">
+            <img src="../assets/instagram.png" alt="Logo Footer">
+            <img src="../assets/linkedin.png" alt="Logo Footer">
+
+        </div>
+        <hr>
+        <div id="logoFoot">
+            <img src="../assets/logo-gandalf-blanco.png" alt="Logo Footer">
+        </div>
+        <div id="copyright">
+            <P>Copyright © 2023 Lino Hadeed</P>
+        </div>
+        <div id="privacidad">
+            <a href="#">Informacion legal</a>
+            <a href="#">Politica de privacidad</a>
+        </div>
     </footer>
 
 </body>
