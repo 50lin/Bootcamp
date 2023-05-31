@@ -13,6 +13,42 @@ footer {
 }
 
 
+h1, h2, h3, h4, p {
+    font-family: 'Berkshire Swash';
+
+}
+
+img:hover {
+    
+    filter: blur(4px);
+}
+
+#logoFoot:hover, #logo:hover, #banner img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .cajaPortafolio img:hover {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+
+
 /* FORMULARIO*/
 
 #cajaFormulario {
@@ -446,18 +482,35 @@ legend {
         margin-top: 20px;
         width: 400px;
         height: 250px;
+        margin-left: 15px;
+    }
 
+    .audioPorta{
+        width: 80%;
+        margin-top: 10px;
+        z-index: 1;
+        margin-left: 50px; 
+        padding-bottom: 30px;  
+    }
+
+    #decorativa3{
+        display: none;
 
     }
 
+
     .cajaImg {
         color: white;
+    display: flex;
+    flex-direction: column;
         text-align: center;
     }
 
     .cajaImg div {
         width: 80%;
         margin: 0 auto;
+        margin-top: 0px;
+
 
     }
 
@@ -909,11 +962,26 @@ legend {
 
     }
 
+    #decorativa3{
+        display: none;
+
+    }
+    
+
+    .audioPorta{
+        width: 70%;
+        margin-top: 0px;
+        z-index: 1;
+        margin-left: 115px;  
+        padding-bottom: 30px;  
+    }
+
+
+
     .videoPortafolio {
         margin-top: 20px;
-        width: 400px;
-        height: 250px;
-        margin-left: 180px;
+        width: 70%;
+        margin-left: 115px; 
     }
 
     .cajaPortafolio h1 {
@@ -1366,8 +1434,9 @@ legend {
         margin-top: 0;
     }
 
-    .biografiatexto p {
-        line-height: 1.5rem;
+    #textoBioDesk p {
+        font-size: 1.4rem; 
+        margin-top: -50px; 
     }
 
     .biografiatextoDesktop {
@@ -1392,15 +1461,6 @@ legend {
     }
 
 
-
-
-
-
-
-
-
-
-
     /* PORTAFOLIo */
 
 
@@ -1418,14 +1478,22 @@ legend {
     }
 
     .videoPortafolio {
-        margin-top: 20px;
-        width: 400px;
-        height: 250px;
+        margin-top: 0px;
+        width: 35%;  
         position: relative;
-        z-index: 1;
-        left: 800px;
-        margin-top: -100px;
+        z-index: 2;
+        left: 745px;
+        margin-top: -130px;
     }
+
+    .audioPorta{
+        position: absolute;
+        width: 500px; 
+        margin-top: 170px;
+        z-index: 1;
+        margin-left: 265px;
+    }
+
 
     .cajaDecoPorta {
         position: relative;
@@ -1470,10 +1538,6 @@ legend {
         width: 30%;
         align-items: center;
         gap: 10px;
-
-
-
-
     }
 
     .footerPorta {
@@ -1492,6 +1556,16 @@ legend {
         display: block;
     }
 
+    #decorativa3{
+        width: 680px;
+        height: 320px;
+        background-color: #0b0704;
+        margin-left: 640px;
+        margin-top: 25px;
+        position: absolute;
+        z-index: 1; 
+
+    }
 
 
 
